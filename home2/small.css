@@ -1,0 +1,15 @@
+.feature {
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+#features {
+	height: 100%;
+	clear: both;
+	background-color: #f7f7f7;
+	padding: 0;
+}
+
+.feature-text-description {
+	text-align: center;
+}

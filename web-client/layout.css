@@ -1,0 +1,175 @@
+/* 
+    Document   : layout.css
+    Created on : 2013.06.24
+    Author     : Jessica Kung
+*/
+
+body, html {
+	font-family: "Microsoft yahei", "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+#header{
+	width: 100%;
+	height: 128px;
+	position: relative;
+}
+
+#logo {
+	margin-left: 10%;
+	background: #fff;
+	height: 52px;
+	font-size: 46px;
+}
+
+#nav-bar {
+	background: #fff;
+	height: 76px;
+	width: 100%;
+	position: absolute;
+}
+
+#nav-bar.stuck
+{
+    position: fixed;
+    width: 94%;
+    top: 0;
+    border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+#navlist, #second-navlist {
+	margin-left: 10%;
+	padding: 0;
+}
+
+#navlist li {
+	display: inline;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+}
+
+#second-navlist li {
+	display: inline;
+	padding: 0px 16px 8px 16px;
+	font-size: 14px;
+}
+
+#navlist li#first a, #navlist li#first, #second-navlist li#first a, #second-navlist li#first {
+	padding-left: 0px;
+}
+
+#navlist li a, #second-navlist li a {
+	text-decoration:none;
+	color: #1a1a1a;
+}
+
+#navlist li a:hover, #second-navlist li a:hover {
+	color: #006699;
+}
+
+#navlist li a.navlist-active, #second-navlist li a.navlist-active {
+	color: #006699;
+}
+
+.dropdown:after {
+	content: url('images/arrow.png');
+	padding: 4px;
+}
+
+#content-wrapper {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#content {
+	padding: 38px 0 0 0;
+}
+
+#top-table {
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+	width: 100%;
+}
+
+table, th, td {
+	text-align: left;
+	border: 1px solid #d7d7d7;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+th, td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+th:hover, td:hover {
+	overflow: scroll;
+	text-overflow: inherit;
+}
+
+th, td#top-table {
+	height: 36px;
+	padding: 0px 12px 0px 12px;
+	width: 25%;
+}
+
+th#half-table-header {
+	width: 50%;
+}
+
+td {
+	height: 28px;
+	width: 25%;
+	padding: 0px 12px 0px 12px;
+}
+
+th {
+	background-color: #e2e2e2;
+	font-weight: 400;
+}
+
+.half-div {
+	width: 48%;
+	float: left;
+	padding: 0 1% 0 1%;
+}
+
+.div-container {
+	width: 100%;
+}
+
+.first-div {
+	padding: 0 1% 0 0;
+}
+
+.last-div {
+	padding: 0 0 0 1%;
+}
+
+h1 {
+	font-size: 24px;
+	text-align: left;
+	font-weight: 400;
+}
+
+#footer {
+	width: 100%;
+	padding: 6px;
+	background-color: #1a1a1a;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
