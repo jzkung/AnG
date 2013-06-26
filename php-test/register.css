@@ -1,0 +1,51 @@
+#secondary-navbar-wrapper {
+	display: none;
+}
+
+#content-wrapper {
+	margin: 0 10%;
+	position: relative;
+}
+
+#top-content-wrapper {
+}
+
+#create-header {
+	font-size: 24px;
+	display: inline-block;
+}
+
+#sign-in {
+	display: inline-block;
+	float: right;
+}
+
+#left-content-wrapper {
+	width: 50%;
+	float: left;
+}
+
+#right-content-wrapper {
+	width: 50%;
+	float: right;
+}
+
+#forms-wrapper {
+	padding: 5%;
+	background-color: #fafafa;
+	border: #cfcfcf 1px solid;
+}
+
+input {
+	height: 34px;
+	width: 100%;
+	border: #cfcfcf 1px solid;
+	padding: 14px;
+	display: block;
+	font-size: 16px;
+}
+
+input:focus {
+	border: #00adef 1px solid;
+	transition: all 0.4s ease-in-out;
+}
