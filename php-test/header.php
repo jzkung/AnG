@@ -1,6 +1,6 @@
 <div id="header">
-	<div id="logo"><a href="index.php">AnG</a></div>
-	<div id="login-register"><a href="#">登陆</a> | <a href="#">注册</a></div>
+	<div id="logo"><a href="index.php"><img src="images/logo.png"></a></div>
+	<div id="login-register"><a href="#">登录</a> | <a href="#">注册</a></div>
 	<div id="navbars-wrapper">
 		<div id="main-navbar-wrapper">
 			<div id="main-navbar">

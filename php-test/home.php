@@ -60,14 +60,14 @@
 <div id="experience">
 	<img src="images/experience.png"/>
 	<div id="experience-text-container">
-		<div id="experience-text-header">我们的经验</div>
+		<div id="experience-text-header">我们的产品</div>
 		<div id="experience-text-description">中国千余家广告主的信赖</div>
 	</div>
 </div>
 <div style="clear:both"></div>
 <div id="register">
 	<div id="register-text-container">
-		<div id="register-text-header">鼠标一点，轻松实现</div>
+		<div id="register-text-header">还没有AG帐户？</div>
 		<div id="register-text-description">
 			<form>
 				<p>
