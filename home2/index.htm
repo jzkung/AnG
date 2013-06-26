@@ -17,15 +17,33 @@
 <body>
 <div id="main-wrapper">
 	<div id="header">
-		<div id="logo">AnG</div>
-		<div id="login-register">Sign Up | Sign In</div>
-		<div id="nav-bar">
-			<ul id="navlist">
-				<li id="first"><a href="#" class="navlist-active">首页</a></li>
-				<li><a href="#">产品和服务</a></li>
-				<li><a href="#">成功案例</a></li>
-				<li><a href="#">关于我们</a></li>
-			</ul>
+		<div id="logo"><a href="index.php">AnG</a></div>
+		<div id="login-register"><a href="#">登陆</a> | <a href="#">注册</a></div>
+		<div id="navbars-wrapper">
+			<div id="main-navbar-wrapper">
+				<div id="main-navbar">
+					<ul>
+						<li id="main-navbar-home" class="first"><a href="#">首页</a></li>
+						<li id="main-navbar-products"><a class="navbar-active">产品和服务</a></li>
+						<li><a href="#">成功案例</a></li>
+						<li class="last"><a href="#">关于我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="secondary-navbar-wrapper">
+				<div id="secondary-navbar">
+					<ul id="secondary-home">
+						<li class="first"><a href="#" class="navbar-active">首页</a></li>
+						<li><a href="#">首页</a></li>
+						<li class="last"><a href="#">首页</a></li>
+					</ul>
+					<ul id="secondary-products">
+						<li class="first"><a href="#" class="navbar-active">产品和服务1</a></li>
+						<li><a href="#">产品和服务首页2</a></li>
+						<li class="last"><a href="#">产品和服务3</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div style="clear:both"></div>
@@ -36,8 +54,8 @@
 			<div class="button blue-button">注册</div>
 			<div class="button gray-button">登录</div>
 		</div>
-	</div>
-	<div id="content">
+		</div>
+		<div id="content">
 		<div id="features">
 			<a href="#" class="feature">
 				<img src="images/features-1.png" class="center">
@@ -87,11 +105,32 @@
 				</div>
 			</a>
 		</div>
+		<div style="clear:both"></div>
 		<div id="experience">
-
+			<img src="images/experience.png"/>
+			<div id="experience-text-container">
+				<div id="experience-text-header">我们的经验</div>
+				<div id="experience-text-description">中国千余家广告主的信赖</div>
+			</div>
 		</div>
-		<div id="contact">
-
+		<div style="clear:both"></div>
+		<div id="register">
+			<div id="register-text-container">
+				<div id="register-text-header">鼠标一点，轻松实现</div>
+				<div id="register-text-description">
+					<form>
+						<p>
+							<input type="text" name="username" placeholder="公司或团队的名称"><br><br>
+							<input type="text" name="email" placeholder="填写你的邮箱">
+						</p>
+						<div style="clear:both"></div>
+						<button type="submit" name="submit">
+							<i class="register-arrow"></i>
+					        <span>注册</span>
+					    </button>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
