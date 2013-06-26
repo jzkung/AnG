@@ -4,7 +4,18 @@
 		<div id="sign-in">Or Sign In</div>
 	</div>
 	<div id="left-content-wrapper">
-		Pictures and text
+		<div id="group-1">
+			<h3>Header 1</h3>
+		</div>
+		<div id="group-2">
+			<h3>Header 2</h3>
+		</div>
+		<div id="group-3">
+			<h3>Header 3</h3>
+		</div>
+		<div id="group-4">
+			<h3>Header 4</h3>
+		</div>
 	</div>
 	<div id="right-content-wrapper">
 		<div id="forms-wrapper">

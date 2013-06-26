@@ -222,6 +222,6 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-	border: 1px #000 solid;
+	border: 1px #1a1a1a solid;
 	transition: all 0.4s ease-in-out;
 }

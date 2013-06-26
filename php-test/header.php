@@ -20,9 +20,10 @@
 					<li class="last"><a href="#">首页</a></li>
 				</ul>
 				<ul id="secondary-products">
-					<li class="first"><a href="#" id="secondary-products-1">产品和服务1</a></li>
-					<li><a href="#" id="secondary-products-2">产品和服务首页2</a></li>
-					<li class="last"><a href="#" id="secondary-products-3">产品和服务3</a></li>
+					<li class="first"><a href="#" id="secondary-products-1">AG广告管理平台</a></li>
+					<li><a href="#" id="secondary-products-2">AG竞价助手</a></li>
+					<li><a href="#" id="secondary-products-3">AG广告系统旗舰版</a></li>
+					<li class="last"><a href="#" id="secondary-products-4">AG淘宝营销服务</a></li>
 				</ul>
 			</div>
 		</div>
