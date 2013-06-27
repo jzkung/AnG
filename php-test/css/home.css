@@ -152,7 +152,7 @@ img.center {
 }
 
 #register-text-description button i {
-	background-image: url('images/homepage-signup-button.png');
+	background-image: url('../images/homepage-signup-button.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	position: absolute;
