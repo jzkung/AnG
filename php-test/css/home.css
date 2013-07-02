@@ -28,18 +28,10 @@
 	margin-left: 5px;
 }
 
-.blue-button {
-	background-color: #00adef;
-}
-
-.gray-button {
-	background-color: #c7c7c7;
-}
-
-#ad-text-container div.button {
+#ad-text-container button {
 	margin-top: 22px;
 	margin-left: 5px;
-	font-size: 26px;
+	padding: 14px 44px;
 }
 
 #features {
@@ -118,8 +110,8 @@ img.center {
 }
 
 #register {
+	background-image: url('../images/mouse.png');
 	background-color: #fff;
-	background-image: url('images/mouse.png');
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	height: 432px;
@@ -146,7 +138,7 @@ img.center {
 	top: 0;
 	left: 500px;
 	overflow: hidden;
-
+	padding: 0;
 	background-color: #00adef;
 	border: #c7c7c7 1px solid;
 	line-height: 114px;
@@ -167,8 +159,6 @@ img.center {
 
 #register-text-description button span {
 	display: block;
-	color: #fff;
-	font-size: 30px;
 	opacity: 0.8;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;

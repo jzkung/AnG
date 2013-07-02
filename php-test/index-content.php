@@ -2,8 +2,8 @@
 <div id="ad-text-container">
 	<div id="ad-text-header">在线营销！</div>
 	<div id="ad-text-description">AG广告平台每日管理预算超过400万</div>
-	<div class="button blue-button">注册</div>
-	<div class="button gray-button">登录</div>
+	<button class="button blue-button">注册</button>
+	<button class="button gray-button">登录</button>
 </div>
 </div>
 <div id="content">

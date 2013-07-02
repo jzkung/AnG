@@ -14,8 +14,8 @@
 
 <div id="content-wrapper">
 	<div id="top-content-wrapper">
-		<div id="create-header">注册一个AG帐户</div>
-		<div id="sign-in">已有一个AG帐户？请直接<a href="#">登录</a></div>
+		<h2>注册一个AG帐户</h2>
+		<div id="sign-in-register">已有一个AG帐户？请直接<a href="login.php">登录</a></div>
 	</div>
 	<div id="left-content-wrapper">
 		<div id="group-1" class="group">
@@ -55,9 +55,9 @@
 		<div id="forms-wrapper">
 			<form name="register-form" method="post" action="">
 				<div id="company-info" class="form-group">
-					<h2>公司帐户</h2>
+					<h3 class="first">公司帐户</h3>
 					<div class="input-group"><input name="company-name" type="text" placeholder="公司名称" autofocus required/></div>
-					<div class="input-group"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
+					<div class="input-group last"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
 				</div>
 				<div id="company-address" class="form-group">
 					<h4>公司地址</h4>
@@ -110,18 +110,17 @@
 						<option value="shanghai" data-alternative-spellings="SH Shanghai">上海</option>
 					</select>
 					</div>
-					<div class="input-group"><input name="company-address" type="text" placeholder="公司地址" required/></div>
+					<div class="input-group last"><input name="company-address" type="text" placeholder="公司地址" required/></div>
 				</div>
 				<div id="company-contact" class="form-group">
 					<h4>联系人信息</h4>
-					<div class="input-group">
+					<div class="input-group last">
 						<input name="company-contact-person" type="text" placeholder="联系人" required/>
 						<input name="company-contact-number" type="tel" placeholder="联系电话" required/>
 					</div>
 				</div>
-				<br>
 				<div id="user-info" class="form-group">
-					<h2>帐户所有者信息</h2>
+					<h3>帐户所有者信息</h3>
 					<div class="input-group"><input name="username" type="text" placeholder="用户名" required/></div>
 					<div class="input-group"><input name="password" type="password" placeholder="登录密码" required/></div>
 					<div class="input-group"><input name="password-confirm" type="password" placeholder="确认密码" required/></div>
@@ -129,10 +128,10 @@
 						<input name="email" type="email" placeholder="邮箱" required/>
 						<button class="small" id="send-verification-button" disabled>发送验证码</button>
 					</div>
-					<div class="input-group"><input name="verification-code" type="text" placeholder="验证码" required/></div>
+					<div class="input-group last"><input name="verification-code" type="text" placeholder="验证码" required/></div>
 				</div>
 				<div id="terms" class="form-group">
-					<div class="input-group">点击注册，表示您已阅读并同意<a href="files/terms.pdf">AnG服务条款</a>。</div>
+					<div id="terms-text">点击注册，表示您已阅读并同意<a href="files/terms.pdf">AnG服务条款</a>。</div>
 					<button class="big" id="register-button" type="submit">注册帐户</button>
 				</div>
 			</form>
