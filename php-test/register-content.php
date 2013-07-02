@@ -15,7 +15,7 @@
 <div id="content-wrapper">
 	<div id="top-content-wrapper">
 		<div id="create-header">注册一个AG帐户</div>
-		<div id="sign-in">已经有了AG帐户？登录</div>
+		<div id="sign-in">已有一个AG帐户？请直接<a href="#">登录</a></div>
 	</div>
 	<div id="left-content-wrapper">
 		<div id="group-1" class="group">
@@ -53,15 +53,15 @@
 	</div>
 	<div id="right-content-wrapper">
 		<div id="forms-wrapper">
-			<form name="register-form" method="post" action="RegisterForm.aspx">
+			<form name="register-form" method="post" action="">
 				<div id="company-info" class="form-group">
-					<h2>公司基本信息</h2>
-					<input name="company-name" type="text" placeholder="公司名称" autofocus/><br>
-					<input name="company-domain" type="text" placeholder="公司主域" />
+					<h2>公司帐户</h2>
+					<div class="input-group"><input name="company-name" type="text" placeholder="公司名称" autofocus required/></div>
+					<div class="input-group"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
 				</div>
 				<div id="company-address" class="form-group">
-					<h2>公司地址</h2>
-					<select name="provinces" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
+					<h4>公司地址</h4>
+					<div class="input-group"><select name="provinces" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
 						<option value="" selected="selected"></option>
 						<option value="北京市" data-alternative-spellings="BJ Beijing Beijingshi">北京市</option>
 						<option value="天津市" data-alternative-spellings="TJ Tianjin Tianjinshi">天津市</option>
@@ -109,25 +109,31 @@
 						<option value="beijing" data-alternative-spellings="BJ Beijing">北京</option>
 						<option value="shanghai" data-alternative-spellings="SH Shanghai">上海</option>
 					</select>
-					<br><br>
-					<input name="company-address" type="text" placeholder="公司地址" />
+					</div>
+					<div class="input-group"><input name="company-address" type="text" placeholder="公司地址" required/></div>
 				</div>
 				<div id="company-contact" class="form-group">
-					<h2>公司联系方式</h2>
-					<input name="company-contact-person" type="text" placeholder="联系人" /><br>
-					<input name="company-contact-number" type="text" placeholder="联系电话" />
+					<h4>联系人信息</h4>
+					<div class="input-group">
+						<input name="company-contact-person" type="text" placeholder="联系人" required/>
+						<input name="company-contact-number" type="tel" placeholder="联系电话" required/>
+					</div>
 				</div>
+				<br>
 				<div id="user-info" class="form-group">
-					<h2>用户信息</h2>
-					<input name="username" type="text" placeholder="用户名" /><br>
-					<input name="password" type="password" placeholder="登录密码" /><br>
-					<input name="password-confirm" type="password" placeholder="确认密码" /><br>
-					<input name="email" type="text" placeholder="邮箱" /><br>
-					<input name="verification-code" type="text" placeholder="验证码" />
+					<h2>帐户所有者信息</h2>
+					<div class="input-group"><input name="username" type="text" placeholder="用户名" required/></div>
+					<div class="input-group"><input name="password" type="password" placeholder="登录密码" required/></div>
+					<div class="input-group"><input name="password-confirm" type="password" placeholder="确认密码" required/></div>
+					<div class="input-group">
+						<input name="email" type="email" placeholder="邮箱" required/>
+						<button class="small" id="send-verification-button" disabled>发送验证码</button>
+					</div>
+					<div class="input-group"><input name="verification-code" type="text" placeholder="验证码" required/></div>
 				</div>
 				<div id="terms" class="form-group">
-					By clicking 'register', I confirm that I have read the terms and conditions.<br>
-					<button>Create an Account</button>
+					<div class="input-group">点击注册，表示您已阅读并同意<a href="files/terms.pdf">AnG服务条款</a>。</div>
+					<button class="big" id="register-button" type="submit">注册帐户</button>
 				</div>
 			</form>
 		</div>

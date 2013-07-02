@@ -69,6 +69,10 @@
 	border: #cfcfcf 1px solid;
 }
 
+#terms {
+	margin: 40px 0 0 0;
+}
+
 h2, h3 {
 	font-weight: 400;
 	margin: 0 0 24px 0;
@@ -78,6 +82,11 @@ h2 {
 	margin-top: 24px;
 }
 
+.input-group {
+	margin-bottom: 10px;
+	height: 34px;
+}
+
 input {
 	height: 34px;
 	border: #cfcfcf 1px solid;
@@ -85,10 +94,33 @@ input {
 	font-size: 16px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
 	display: block;
 	width: 100%;
 }
+
+input[name="company-contact-person"] {
+	width: 32.577%;
+	display: inline-block;
+}
+
+input[name="company-contact-number"] {
+	width: 66.29%;
+	display: inline-block;
+}
+
+input[name="email"] {
+	width: 66.29%;
+	float: left;
+}
+
+::-webkit-input-placeholder { 
+	font-weight: 400;
+	text-shadow: 0;
+}
+::-moz-placeholder { font-weight: 400; } /* firefox 19+ */
+:-ms-input-placeholder { font-weight: 400; } /* ie */
+input:-moz-placeholder { font-weight: 400; }
 
 select {
 	font-size: 16px;
@@ -104,6 +136,48 @@ input:focus {
 
 .label {
 	vertical-align: 10px;
+}
+
+input:focus:required:invalid {
+	border: #a61d00 1px solid;
+}
+
+input:required:valid {
+	background-image: url('../images/register/valid-form.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	transition: none;
+}
+
+button {
+	background-color: #00adef;
+	color: #fff;
+	border: none;
+	vertical-align: middle;
+	text-align: center;
+}
+
+button:hover {
+	background-color: #000;
+}
+
+button.big {
+	height: 48px;
+	width: 100%;
+	font-size: 24px;
+}
+
+button.small {
+	padding: 8px;
+	font-size: 16px;
+	float: left;
+	margin: 0 0 0 5px;
+	width: 32.577%;
+	line-height: small;
+}
+
+button:disabled {
+	background-color: #c7c7c7;
 }
 
 .ui-autocomplete-input {
