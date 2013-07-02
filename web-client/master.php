@@ -8,7 +8,7 @@
 <script src="js/waypoints-sticky.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#header').waypoint('sticky');
+        $('#sticky-navbars-wrapper').waypoint(('sticky'));
         $(<?php echo $main_navbar_active; ?>).addClass('navbar-active');
         $(<?php echo $secondary_navbar_active; ?>).addClass('navbar-active');
     });
@@ -16,7 +16,7 @@
 <title><?php echo $page_title; ?></title>
 </head>
 <body>
-<div><?php include('header.php');?></div>
-<div><?php include($page_content);?></div>
-<div><?php include('footer.php');?></div>
+<?php include('header.php');?>
+<?php include($page_content);?>
+<?php include('footer.php');?>
 </body>
