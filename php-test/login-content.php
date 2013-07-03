@@ -40,8 +40,8 @@
 	<div id="right-content-wrapper">
 		<div id="forms-wrapper">
 				<div id="login-info" class="form-group">
-					<div class="input-group"><input name="username" type="text" placeholder="用户名" required autofocus/></div>
-					<div class="input-group"><input name="password" type="password" placeholder="登录密码" required/></div>
+					<div class="input-group"><input name="username" type="text" placeholder="用户名" autofocus/></div>
+					<div class="input-group"><input name="password" type="password" placeholder="登录密码" /></div>
 				</div>
 				<div id="login-button-container" class="form-group">
 					<div id="forgot-password-text"><a href="#">忘记密码？</a></div>

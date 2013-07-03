@@ -73,7 +73,7 @@
 }
 
 #forms-wrapper h3 {
-	padding-bottom: 24px;
+	padding-bottom: 10px;
 	padding-top: 40px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .input-group {
-	margin-bottom: 14px;
+	margin-top: 14px;
 	height: 34px;
 }
 
@@ -129,6 +129,11 @@ input:focus {
 
 .label {
 	vertical-align: 10px;
+}
+
+.error {
+	height: 20px;
+	display: none;
 }
 
 button.big {

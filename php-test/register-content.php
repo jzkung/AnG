@@ -1,16 +1,6 @@
 <script type="text/javascript" src="js/jquery-ui-autocomplete.js"></script>
 <script type="text/javascript" src="js/jquery.select-to-autocomplete.min.js"></script>
-<script type="text/javascript" charset="utf-8">	
-	(function($){
-	    $(function(){
-	      $('select').selectToAutocomplete();
-	      $('form').submit(function(){
-	        alert( $(this).serialize() );
-	        return false;
-	      });
-	    });
-	  })(jQuery);
-</script>
+<script type="text/javascript" src="js/register.js" charset="utf-8"></script>
 
 <div id="content-wrapper">
 	<div id="top-content-wrapper">
@@ -56,8 +46,12 @@
 			<form name="register-form" method="post" action="">
 				<div id="company-info" class="form-group">
 					<h3 class="first">公司帐户</h3>
-					<div class="input-group"><input name="company-name" type="text" placeholder="公司名称" autofocus required/></div>
+					<div class="input-group">
+						<input name="company-name" type="text" placeholder="公司名称" autofocus required/>
+					</div>
+					<div id="company-name-error" class="error"></div>
 					<div class="input-group last"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
+					<div id="company-domain-error" class="error"></div>
 				</div>
 				<div id="company-address" class="form-group">
 					<h4>公司地址</h4>
@@ -110,24 +104,32 @@
 						<option value="shanghai" data-alternative-spellings="SH Shanghai">上海</option>
 					</select>
 					</div>
+					<div id="company-address-select-error" class="error"></div>
 					<div class="input-group last"><input name="company-address" type="text" placeholder="公司地址" required/></div>
+					<div id="company-address-error" class="error"></div>
 				</div>
 				<div id="company-contact" class="form-group">
 					<h4>联系人信息</h4>
 					<div class="input-group last">
-						<input name="company-contact-person" type="text" placeholder="联系人" required/>
-						<input name="company-contact-number" type="tel" placeholder="联系电话" required/>
+						<input name="contact-person" type="text" placeholder="联系人" required/>
+						<div id="contact-person-error" class="error"></div>
+						<input name="contact-number" type="tel" placeholder="联系电话" required/>
+						<div id="contact-number-error" class="error"></div>
 					</div>
 				</div>
 				<div id="user-info" class="form-group">
 					<h3>帐户所有者信息</h3>
 					<div class="input-group"><input name="username" type="text" placeholder="用户名" required/></div>
+					<div id="username-error" class="error"></div>
 					<div class="input-group"><input name="password" type="password" placeholder="登录密码" required/></div>
-					<div class="input-group"><input name="password-confirm" type="password" placeholder="确认密码" required/></div>
+					<div id="password-error" class="error"></div>
+					<div class="input-group"><input name="confirm-password" type="password" placeholder="确认密码" required/></div>
+					<div id="confirm-password-error" class="error"></div>
 					<div class="input-group">
 						<input name="email" type="email" placeholder="邮箱" required/>
 						<button class="small" id="send-verification-button" disabled>发送验证码</button>
 					</div>
+					<div id="email-error" class="error"></div>
 					<div class="input-group last"><input name="verification-code" type="text" placeholder="验证码" required/></div>
 				</div>
 				<div id="terms" class="form-group">

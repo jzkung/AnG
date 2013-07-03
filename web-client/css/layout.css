@@ -52,7 +52,7 @@ body{
 }
 
 #login-register a {
-	color: #a9a9a9;
+	color: #fff;
 }
 
 #sticky-navbars-wrapper {
@@ -123,6 +123,10 @@ button {
 	font-size: 26px;
 }
 
+#login-register button {
+	font-size: 12px;
+}
+
 button:hover {
 	background-color: #1a1a1a;
 	cursor: pointer;
@@ -170,6 +174,71 @@ a:hover {
 *:focus {
     outline: 0;
 }
+
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+	width: 100%;
+}
+
+table, th, td {
+	text-align: left;
+	border: 1px solid #d7d7d7;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+th, td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+th:hover, td:hover {
+	overflow: scroll;
+	text-overflow: inherit;
+}
+
+th, td#top-table {
+	height: 36px;
+	padding: 0px 12px 0px 12px;
+	width: 25%;
+}
+
+th#half-table-header {
+	width: 50%;
+}
+
+td {
+	height: 28px;
+	width: 25%;
+	padding: 0px 12px 0px 12px;
+}
+
+th {
+	background-color: #e2e2e2;
+	font-weight: 400;
+}
+
+.half-div {
+	width: 48%;
+	float: left;
+	padding: 0 1% 0 1%;
+}
+
+.div-container {
+	width: 100%;
+}
+
+.first-div {
+	padding: 0 1% 0 0;
+}
+
+.last-div {
+	padding: 0 0 0 1%;
+}
+
 
 form {
 	margin: 0;

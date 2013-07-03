@@ -17,7 +17,7 @@
 
 		<div class="container">
 			<div class="half-div first-div">
-				<h1>昨日账务</h1>
+				<h2>昨日账务</h2>
 				<table>
 					<tr>
 						<th id="half-table-header">帐户</th>
@@ -67,11 +67,11 @@
 				</table>
 			</div>
 			<div class="half-div last-div">
-				<h1>昨日来源分布</h1>
+				<h2>昨日来源分布</h2>
 			</div>
 		</div>
 		<div style="clear:both"></div>
-		<h1>趋势图</h1>
+		<h2>趋势图</h2>
 		<p>Scroll.</p>
 		<p>Scroll.</p>
 		<p>Scroll.</p>
