@@ -47,7 +47,7 @@
 				<div id="company-info" class="form-group">
 					<h3 class="first">公司帐户</h3>
 					<div class="input-group">
-						<input name="company-name" type="text" placeholder="公司名称" autofocus required/>
+						<input name="company-name" type="text" placeholder="公司名称" required/>
 					</div>
 					<div id="company-name-error" class="error"></div>
 					<div class="input-group last"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
@@ -55,7 +55,7 @@
 				</div>
 				<div id="company-address" class="form-group">
 					<h4>公司地址</h4>
-					<div class="input-group"><select name="provinces" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
+					<div class="input-group"><select name="provinces" class="province-selector" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
 						<option value="" selected="selected"></option>
 						<option value="北京市" data-alternative-spellings="BJ Beijing Beijingshi">北京市</option>
 						<option value="天津市" data-alternative-spellings="TJ Tianjin Tianjinshi">天津市</option>
@@ -93,12 +93,12 @@
 						<option value="台湾省" data-alternative-spellings="Taiwan">台湾省</option>
 						<option value="其它" data-alternative-spellings="Other">其它</option>
 					</select>
-					<select name="cities" id="city-selector" autocorrect="off" autocomplete="off" placeholder="请输入城市">
+					<select name="cities" class="city-selector" autocorrect="off" autocomplete="off" placeholder="请输入城市">
 						<option value="" selected="selected"></option>
 						<option value="beijing" data-alternative-spellings="BJ Beijing">北京</option>
 						<option value="shanghai" data-alternative-spellings="SH Shanghai">上海</option>
 					</select>
-					<select name="districts" id="district-selector" autocorrect="off" autocomplete="off" placeholder="请输入地区">
+					<select name="districts" class="district-selector" autocorrect="off" autocomplete="off" placeholder="请输入地区">
 						<option value="" selected="selected"></option>
 						<option value="beijing" data-alternative-spellings="BJ Beijing">北京</option>
 						<option value="shanghai" data-alternative-spellings="SH Shanghai">上海</option>
@@ -112,9 +112,9 @@
 					<h4>联系人信息</h4>
 					<div class="input-group last">
 						<input name="contact-person" type="text" placeholder="联系人" required/>
-						<div id="contact-person-error" class="error"></div>
 						<input name="contact-number" type="tel" placeholder="联系电话" required/>
 						<div id="contact-number-error" class="error"></div>
+						<div id="contact-person-error" class="error"></div>
 					</div>
 				</div>
 				<div id="user-info" class="form-group">

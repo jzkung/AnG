@@ -100,12 +100,12 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 	width: 100%;
 }
 
-input[name="company-contact-person"] {
+input[name="contact-person"] {
 	width: 32.577%;
 	display: inline-block;
 }
 
-input[name="company-contact-number"] {
+input[name="contact-number"] {
 	width: 66.29%;
 	display: inline-block;
 }
@@ -132,8 +132,12 @@ input:focus {
 }
 
 .error {
-	height: 20px;
+	margin-top: 2px;
+	height: 12px;
+	font-size: 14px;
 	display: none;
+	color: red;
+	transition: all 0.4s ease-in-out;
 }
 
 button.big {
