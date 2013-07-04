@@ -47,7 +47,7 @@
 				<div id="company-info" class="form-group">
 					<h3 class="first">公司帐户</h3>
 					<div class="input-group">
-						<input name="company-name" type="text" placeholder="公司名称" required/>
+						<input name="company-name" type="text" placeholder="公司名称" autofocus required/>
 					</div>
 					<div id="company-name-error" class="error"></div>
 					<div class="input-group last"><input name="company-domain" type="url" placeholder="公司主域" required/></div>
@@ -113,8 +113,8 @@
 					<div class="input-group last">
 						<input name="contact-person" type="text" placeholder="联系人" required/>
 						<input name="contact-number" type="tel" placeholder="联系电话" required/>
-						<div id="contact-number-error" class="error"></div>
-						<div id="contact-person-error" class="error"></div>
+						<div id="contact-person-error" class="contact-person-error"></div>
+						<div id="contact-number-error" class="contact-number-error"></div>
 					</div>
 				</div>
 				<div id="user-info" class="form-group">

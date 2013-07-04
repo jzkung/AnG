@@ -18,7 +18,9 @@ $(document).ready(function() {
 	var province = $('[name="provinces"]');
 	var provinceSelector = $('input.province-selector');
 	var city = $('[name="cities"]');
+	var citySelector = $('input.city-selector');
 	var district = $('[name="districts"]');
+	var districtSelector = $('input.district-selector');
 	var companyAddressSelectError = $('#company-address-select-error');
 	var companyAddress = $('[name="company-address"]');
 	var companyAddressError = $('#company-address-error');
@@ -38,37 +40,26 @@ $(document).ready(function() {
 	var emailError = $('#email-error');
 
 	function displayError(errorInput, errorContainer, errorMessage, color) {
-		errorContainer.show();
+		errorInput.css({'background': '#fff'});
+		errorContainer.css({'display': 'inline'});
 		errorContainer.text(errorMessage);
 		errorContainer.css({'color': color});
 		errorInput.css({'border-color': color});
 	}
 
-	function hideError(errorInput, errorContainer) {
+	function hideError(errorInput, errorContainer, color) {
+		errorInput.css({'transition': 'none'});
+		errorInput.css({'background': "url('images/register/valid-form.png') 98% center no-repeat #fff"});
 		errorContainer.hide();
 		errorContainer.text("");
-		errorInput.css({'border-color': '#cfcfcf'});
-	}
-
-	function hideErrorBlack(errorInput, errorContainer) {
-		errorContainer.hide();
-		errorContainer.text("");
-		errorInput.css({'border-color': '#1a1a1a'});
+		errorInput.css({'border-color': color});
 	}
 
 	function validateCompanyName() {
 		if (companyName.val().length == 0) {
 			displayError(companyName, companyNameError, "请输入公司名称", '#cc3300');
 		} else {
-			hideErrorBlack(companyName, companyNameError);
-		}
-	}
-
-	function validateCompanyNameFinal() {
-		if (companyName.val().length == 0) {
-			displayError(companyName, companyNameError, "请输入公司名称", '#cc3300');
-		} else {
-			hideError(companyName, companyNameError);
+			hideError(companyName, companyNameError, '#cfcfcf');
 		}
 	}
 
@@ -79,19 +70,31 @@ $(document).ready(function() {
 		} else if (!regex.test(companyDomain.val())) {
 			displayError(companyDomain, companyDomainError, "公司主域格式不对，应如：agrant.cn", '#cc3300');
 		} else {
-			hideError(companyDomain, companyDomainError);
+			hideError(companyDomain, companyDomainError, '#cfcfcf');
 		}
 	}
 
-	function validateCompanyAddressSelect() {
+	function validateProvince() {
 		if (province.find("option:selected").text() == "") {
-			displayError(provinceSelector, companyAddressSelectError, "请选择省份", '#cc3300');
-		} else if (city.find("option:selected").text() == "") {
-			displayError(city, companyAddressSelectError, "请选择城市", '#cc3300');
-		} else if (district.find("option:selected").text() == "") {
-			displayError(district, companyAddressSelectError, "请选择地区", '#cc3300');
+			displayError(provinceSelector, companyAddressSelectError, "以上的信息不能空着，请填写！", '#cc3300');
 		} else {
-			hideError(companyAddressSelect, companyAddressSelectError);
+			hideError(provinceSelector, companyAddressSelectError, '#cfcfcf');
+		}
+	}
+
+	function validateCity() {
+		if (city.find("option:selected").text() == "") {
+			displayError(citySelector, companyAddressSelectError, "以上的信息不能空着，请填写！", '#cc3300');
+		} else {
+			hideError(citySelector, companyAddressSelectError, '#cfcfcf');
+		}
+	}
+
+	function validateDistrict() {
+		if (district.find("option:selected").text() == "") {
+			displayError(districtSelector, companyAddressSelectError, "以上的信息不能空着，请填写！", '#cc3300');
+		} else {
+			hideError(districtSelector, companyAddressSelectError, '#cfcfcf');
 		}
 	}
 
@@ -102,29 +105,29 @@ $(document).ready(function() {
 		} if (!regex.test(companyAddress.val())) {
 			displayError(companyAddress, companyAddressError, "公司地址格式错误，请重新输入", '#cc3300');
 		} else {
-			hideError(companyAddress, companyAddressError);
+			hideError(companyAddress, companyAddressError, '#cfcfcf');
 		}
 	}
 
-	function validateContactPerson() {
-		var regex = /^[\w-.]+$/;
-		if (contactPerson.length == 0) {
+	function validateContactPerson(color) {
+		var regex = /^[\w\u4E00-\u9FA5-.]+$/;
+		if (contactPerson.val().length == 0) {
 			displayError(contactPerson, contactPersonError, "请填写联系人名称", '#cc3300');
 		} else if (!regex.test(contactPerson.val())) {
 			displayError(contactPerson, contactPersonError, "联系人名称含有非法字符", '#cc3300');
 		} else {
-			hideError(contactPerson, contactPersonError);
+			hideError(contactPerson, contactPersonError, color);
 		}
 	}
 
-	function validateContactNumber() {
+	function validateContactNumber(color) {
 		var regex = /[0-9-()+]{3,20}/;
 		if (contactNumber.length == 0) {
 			displayError(contactNumber, contactNumberError, "Too short put in number", '#cc3300');
 		} else if (!regex.test(contactNumber.val())) {
 			displayError(contactNumber, contactNumberError, "Yo number weird", '#cc3300');
 		} else {
-			hideError(contactNumber, contactNumberError);
+			hideError(contactNumber, contactNumberError, color);
 		}
 	}
 
@@ -142,7 +145,7 @@ $(document).ready(function() {
 		}
 	}
 
-	function validatePassword() {
+	function validatePassword(color) {
 		var regex1 = /\s/;
 		var regex2 = /^[\w\,\\.\/\;\[\]\\\=\-\`\~\!\@\#\$\%\^\&\*\(\)\_\+\{\}\|\:\<\>\?]+$/;
 		var regex3 = /(?=.*[0-9])/;
@@ -158,15 +161,15 @@ $(document).ready(function() {
 		} else if (!regex3.test(password.val()) && !regex4.test(password.val())) {
 			displayError(password, passwordError, "请使用字母、数字或标点符号的任意组合", '#cc3300');
 		} else {
-			hideError(password, passwordError);
+			hideError(password, passwordError, color);
 		}
 	}
 
-	function validateConfirmPassword() {
+	function validateConfirmPassword(color) {
 		if (password.val() != confirmPassword.val()) {
 			displayError(confirmPassword, confirmPasswordError, "两次密码输入不一致", '#cc3300');
 		} else {
-			hideError(confirmPassword, confirmPasswordError);
+			hideError(confirmPassword, confirmPasswordError, color);
 		}
 	}
 
@@ -182,49 +185,68 @@ $(document).ready(function() {
 	companyName.focus(function(event) {
 		displayError.call(this, companyName, companyNameError, "请输入公司名称", '#1a1a1a');
 	});
-	companyName.blur(validateCompanyNameFinal);
-	companyName.keyup(validateCompanyName);
+	companyName.trigger('focus');
+	companyName.blur(validateCompanyName);
 
 	companyDomain.focus(function(event) {
 		displayError.call(this, companyDomain, companyDomainError, "请输入公司主域，格式如：agrant.cn", '#1a1a1a');
 	});
 	companyDomain.blur(validateCompanyDomain);
-	companyDomain.keyup(validateCompanyDomain);
 
 	provinceSelector.focus(function(event) {
 		displayError.call(this, provinceSelector, companyAddressSelectError, "请输入公司所在的省份", '#1a1a1a');
 	});
-	provinceSelector.blur(validateCompanyAddressSelect);
-	provinceSelector.keyup(validateCompanyAddressSelect);
+	provinceSelector.blur(validateProvince);
+
+	citySelector.focus(function(event) {
+		displayError.call(this, citySelector, companyAddressSelectError, "请输入公司所在的city", '#1a1a1a');
+	});
+	citySelector.blur(validateCity);
+
+	districtSelector.focus(function(event) {
+		displayError.call(this, districtSelector, companyAddressSelectError, "请输入公司所在的district", '#1a1a1a');
+	});
+	districtSelector.blur(validateDistrict);
 
 	companyAddress.focus(function(event) {
 		displayError.call(this, companyAddress, companyAddressError, "请填写详细公司地址", '#1a1a1a');
 	});
 	companyAddress.blur(validateCompanyAddress);
-	companyAddress.keyup(validateCompanyAddress);
 
 	contactPerson.focus(function(event) {
 		displayError.call(this, contactPerson, contactPersonError, "请输入公司联系人", '#1a1a1a');
 	});
-	contactPerson.blur(validateContactPerson);
-	contactPerson.keyup(validateContactPerson);
+	contactPerson.blur(function(event) {
+		validateContactPerson.call(this, '#cfcfcf');
+	});
+	contactPerson.keyup(function(event) {
+		validateContactPerson.call(this, '#1a1a1a');
+	});
 
 	contactNumber.focus(function(event) {
 		displayError.call(this, contactNumber, contactNumberError, "Put in yo number", '#1a1a1a');
 	});
-	contactNumber.blur(validateContactNumber);
-	contactNumber.keyup(validateContactNumber);
+	contactNumber.blur(function(event) {
+		validateContactNumber.call(this, '#cfcfcf');
+	});
+	contactNumber.keyup(function(event) {
+		validateContactNumber.call(this, '#1a1a1a');
+	});
 
 	username.blur(validateUsername);
-	username.keyup(validateUsername);
-	password.blur(validatePassword);
-	password.keyup(validatePassword);
-	confirmPassword.blur(validateConfirmPassword);
-	confirmPassword.keyup(validateConfirmPassword);	
+	password.blur(function(event) {
+		validatePassword.call(this, '#cfcfcf');
+	});
+	password.keyup(function(event) {
+		validatePassword.call(this, '#1a1a1a');
+	});
+	confirmPassword.blur(function(event) {
+		validateConfirmPassword.call(this, '#cfcfcf');
+	});
+	confirmPassword.keyup(function(event) {
+		validateConfirmPassword.call(this, '#1a1a1a');
+	});	
 	email.blur(validateEmail);
-	email.keyup(validateEmail);
-
-	
 });
 
 

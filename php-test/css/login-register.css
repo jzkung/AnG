@@ -131,13 +131,22 @@ input:focus {
 	vertical-align: 10px;
 }
 
-.error {
+.error, .contact-person-error, .contact-number-error {
 	margin-top: 2px;
 	height: 12px;
 	font-size: 14px;
 	display: none;
 	color: red;
 	transition: all 0.4s ease-in-out;
+}
+
+.contact-person-error {
+	width: 30%;
+}
+
+.contact-number-error {
+	width: 65%;
+	margin-left: 7%;
 }
 
 button.big {
