@@ -141,7 +141,7 @@ $(document).ready(function() {
 		} else if (!regex2.test(username.val())) {
 			displayError(username, usernameError, "用户名含有非法字符", '#cc3300');
 		} else {
-			hideError(username, usernameError);
+			hideError(username, usernameError, '#cfcfcf');
 		}
 	}
 
@@ -178,7 +178,7 @@ $(document).ready(function() {
 		if (!regex.test(email.val())) {
 			displayError(email, emailError, "邮箱格式错误", '#cc3300');
 		} else {
-			hideError(email, emailError);
+			hideError(email, emailError, '#cfcfcf');
 		}
 	}
 

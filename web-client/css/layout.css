@@ -31,7 +31,8 @@ body{
 }
 
 #logo {
-	font-size: 46px;
+	padding: 4px 0;
+	font-size: 36px;
 	vertical-align: middle;
 }
 
@@ -110,7 +111,7 @@ ul {
 }
 
 #content-wrapper {
-	margin: 0 auto;
+	margin: 20px auto;
 	width: 1000px;
 }
 
@@ -121,6 +122,7 @@ button {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 26px;
+	transition: all 0.4s ease-in-out;
 }
 
 #login-register button {
@@ -128,8 +130,9 @@ button {
 }
 
 button:hover {
-	background-color: #1a1a1a;
+	background-color: #008acb;
 	cursor: pointer;
+	transition: all 0.4s ease-in-out;
 }
 
 .blue-button {
@@ -142,7 +145,8 @@ button:hover {
 
 h1, h2, h3, h4 {
 	text-align: left;
-	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 h1 {
@@ -195,11 +199,6 @@ th, td {
 	text-overflow: ellipsis;
 }
 
-th:hover, td:hover {
-	overflow: scroll;
-	text-overflow: inherit;
-}
-
 th, td#top-table {
 	height: 36px;
 	padding: 0px 12px 0px 12px;
@@ -219,6 +218,10 @@ td {
 th {
 	background-color: #e2e2e2;
 	font-weight: 400;
+}
+
+.dark-row td {
+	background-color: #fafafa;
 }
 
 .half-div {
@@ -244,7 +247,7 @@ form {
 	margin: 0;
 }
 
-input {
+input[type="text"] {
 	height: 34px;
 	border: #cfcfcf 1px solid;
 	padding-left: 14px;
@@ -277,6 +280,52 @@ input:required:valid {
 input:-moz-placeholder { 
 	font-weight: 100;
 	color: #999;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: non;
+	width: 13px;
+	height: 13px;
+	margin: 0;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 1px solid #cfcfcf;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+	content: url('https://ssl.gstatic.com/ui/v1/menu/checkmark.png');
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+input[type="radio"] {
+	border-radius: 100%;
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	color: #999;
+}
+
+input[type="radio"]:checked::before {
+	background-color: #999;
+	bottom: 3px;
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	top: 3px;
+	content: '';
+	border-radius: 100%;
+}
+
+label {
+	padding: 0 20px 0 6px;
 }
 
 #footer {

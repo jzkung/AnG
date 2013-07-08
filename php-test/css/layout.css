@@ -18,7 +18,7 @@ body, html {
 }
 
 #header{
-	position: relative;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 84px;
@@ -123,6 +123,10 @@ ul {
 	color: #fff;
 }
 
+#content-wrapper {
+	margin-top: 84px;
+}
+
 button {
 	background-color: #00adef;
 	color: #fff;
@@ -134,7 +138,7 @@ button {
 }
 
 button:hover {
-	background-color: #1a1a1a;
+	background-color: #008acb;
 	cursor: pointer;
 	transition: all 0.4s ease-in-out;
 }
@@ -186,6 +190,13 @@ form {
 	margin: 0;
 }
 
+textarea {
+	font-size: 16px;
+	padding: 14px;
+	border: #cfcfcf 1px solid;
+	resize: none;
+}
+
 input {
 	height: 34px;
 	border: #cfcfcf 1px solid;
@@ -193,6 +204,8 @@ input {
 	padding-right: 34px;
 	font-size: 16px;
 }
+
+input[type="submit"]::-moz-focus-inner {border:0;}
 
 ::-webkit-input-placeholder { 
 	font-weight: 100;

@@ -1,0 +1,34 @@
+body {
+	background-color: rgba(250, 250, 250, 0.98);
+}
+
+input {
+	position: relative;
+	width: 32%;
+	margin-bottom: 10px;
+}
+
+textarea {
+	height: 84px;
+	width: 64.6%;
+}
+
+button {
+	background-color: #f37c06;
+}
+
+button:hover {
+	background-color: #c16305;
+}
+
+#submit-button {
+	width: 32%;
+	padding: 27px;
+	vertical-align: top;
+	margin: 0;
+}
+
+#forms-wrapper {
+	width: 54%;
+	padding: 10% 23%;
+}

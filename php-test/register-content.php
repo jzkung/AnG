@@ -46,7 +46,7 @@
 			<form name="register-form" method="post" action="">
 				<div id="company-info" class="form-group">
 					<h3 class="first">公司帐户</h3>
-					<div class="input-group">
+					<div class="input-group first">
 						<input name="company-name" type="text" placeholder="公司名称" autofocus required/>
 					</div>
 					<div id="company-name-error" class="error"></div>
@@ -55,7 +55,7 @@
 				</div>
 				<div id="company-address" class="form-group">
 					<h4>公司地址</h4>
-					<div class="input-group"><select name="provinces" class="province-selector" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
+					<div class="input-group first"><select name="provinces" class="province-selector" id="province-selector" autocorrect="off" autocomplete="off" placeholder="请输入省份">
 						<option value="" selected="selected"></option>
 						<option value="北京市" data-alternative-spellings="BJ Beijing Beijingshi">北京市</option>
 						<option value="天津市" data-alternative-spellings="TJ Tianjin Tianjinshi">天津市</option>
@@ -110,7 +110,7 @@
 				</div>
 				<div id="company-contact" class="form-group">
 					<h4>联系人信息</h4>
-					<div class="input-group last">
+					<div class="input-group first last">
 						<input name="contact-person" type="text" placeholder="联系人" required/>
 						<input name="contact-number" type="tel" placeholder="联系电话" required/>
 						<div id="contact-person-error" class="contact-person-error"></div>
@@ -119,7 +119,7 @@
 				</div>
 				<div id="user-info" class="form-group">
 					<h3>帐户所有者信息</h3>
-					<div class="input-group"><input name="username" type="text" placeholder="用户名" required/></div>
+					<div class="input-group first"><input name="username" type="text" placeholder="用户名" required/></div>
 					<div id="username-error" class="error"></div>
 					<div class="input-group"><input name="password" type="password" placeholder="登录密码" required/></div>
 					<div id="password-error" class="error"></div>
