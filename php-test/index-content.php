@@ -1,10 +1,10 @@
 <div id="ad">
-<div id="ad-text-container">
-	<div id="ad-text-header">在线营销！</div>
-	<div id="ad-text-description">AG广告平台每日管理预算超过400万</div>
-	<button class="button blue-button" href="register.php">注册</button>
-	<button class="button gray-button" href="login.php">登录</button>
-</div>
+	<div id="ad-text-container">
+		<div id="ad-text-header">在线营销！</div>
+		<div id="ad-text-description">AG广告平台每日管理预算超过400万</div>
+		<button class="button blue-button" href="register.php">注册</button>
+		<button class="button gray-button" href="login.php">登录</button>
+	</div>
 </div>
 <div id="content">
 <div id="features">
@@ -60,13 +60,13 @@
 		<div id="register-text-description">
 			<form>
 				<p>
-					<input type="text" name="username" placeholder="公司名称"><br><br>
-					<input type="text" name="email" placeholder="公司网址">
+					<input type="text" class="register-textField" name="username" placeholder="公司名称"><br><br>
+					<input type="text" class="register-textField" name="email" placeholder="公司网址">
 				</p>
 				<div style="clear:both"></div>
-				<button type="submit" name="submit">
+				<button type="submit" name="submit" id="index-submit">
 					<i class="register-arrow"></i>
-			        <span>注册</span>
+			        <span id="index-text">注册</span>
 			    </button>
 			</form>
 		</div>

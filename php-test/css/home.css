@@ -51,13 +51,13 @@
 
 
 .feature img {
-	border-radius: 50%;
 	width: 40%;
 	transition: all 0.4s ease-in-out;
 }
 
 .feature:hover > img {
 	opacity: 0.5;
+	filter: alpha(opacity=50);
 	transition: all 0.4s ease-in-out;
 }
 
@@ -97,6 +97,7 @@ img.center {
 	float: left;
 	width: 40%;
 	max-width: 500px;
+	max-height: 321px;
 }
 
 #experience-text-container {
@@ -143,7 +144,6 @@ img.center {
 	border: #c7c7c7 1px solid;
 	line-height: 114px;
 }
-
 #register-text-description button i {
 	background-image: url('../images/homepage-signup-button.png');
 	background-position: center;
@@ -155,6 +155,7 @@ img.center {
 	left: -20px;
 	opacity: 0;
 	transition: all 0.2s ease-out;
+	display:none;
 }
 
 #register-text-description button span {
@@ -203,15 +204,14 @@ img.center {
 	left: 0;
 	color: #fff;
 }
-
 input[type="text"] {
 	width: 480px;
-	height: 48px;
-	padding: 14px;
+	height: 44px;
+	padding: 0px;
+	padding-left:14px;
 	font-size: 20px;
 	border: 1px #c7c7c7 solid;
 }
-
 input[type="text"]:focus {
 	border: 1px #1a1a1a solid;
 	transition: all 0.4s ease-in-out;

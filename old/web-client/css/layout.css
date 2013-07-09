@@ -1,0 +1,338 @@
+/* 
+    Document   : layout.css
+    Created on : 2013.06.24
+    Author     : Jessica Kung
+*/
+
+body{
+	font-family: "Microsoft YaHei","微软雅黑",Candara,Tahoma,SimSun !important;
+	font-size: 16px;
+	background: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+#header {
+	background-color: #000;
+	height: 108px;
+	z-index: 9000;
+}
+
+#logo-wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header a:hover {
+	color: #fff;
+}
+
+#logo {
+	padding: 4px 0;
+	font-size: 36px;
+	vertical-align: middle;
+}
+
+#logo a {
+	color: #fff;
+}
+
+#logo a:hover {
+	color: #cfcfcf;
+}
+
+#login-register {
+	position: absolute;
+	right: 50%;
+	margin-right: -500px;
+	font-size: 12px;
+	color: #a9a9a9;
+}
+
+#login-register a {
+	color: #fff;
+}
+
+#sticky-navbars-wrapper {
+	height: 52px;
+	width: 100%;
+}
+
+#navbars-wrapper {
+	margin: 0 auto;
+	padding-top: 4px;
+	width: 1000px;
+}
+
+#sticky-navbars-wrapper.stuck {
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	z-index: 9000;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+#header li, #header li {
+	display: inline;
+    padding: 10px 20px 10px 20px;
+}
+
+#header li.first a, #header li.first {
+	padding-left: 0px;
+}
+
+#header li.last a, #header li.last {
+	padding-right: 0px;
+}
+
+#header li a {
+	text-decoration:none;
+	color: #999;
+}
+
+#header li a.navbar-active {
+	color: #fff;
+}
+
+#main-navbar {
+	font-size: 18px;
+}
+
+#secondary-navbar {
+	font-size: 14px;
+	padding-top: 6px;
+}
+
+#content-wrapper {
+	margin: 20px auto;
+	width: 1000px;
+}
+
+button {
+	background-color: #00adef;
+	color: #fff;
+	border: none;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 26px;
+	transition: all 0.4s ease-in-out;
+}
+
+#login-register button {
+	font-size: 12px;
+}
+
+button:hover {
+	background-color: #008acb;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+}
+
+.blue-button {
+	background-color: #00adef;
+}
+
+.gray-button {
+	background-color: #c7c7c7;
+}
+
+h1, h2, h3, h4 {
+	text-align: left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: 66px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #00adef;
+}
+
+a:hover {
+	color: #1a1a1a;
+	cursor: pointer;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	white-space: nowrap;
+	width: 100%;
+}
+
+table, th, td {
+	text-align: left;
+	border: 1px solid #d7d7d7;
+	vertical-align: middle;
+	background-color: #fff;
+}
+
+th, td {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+th, td#top-table {
+	height: 36px;
+	padding: 0px 12px 0px 12px;
+	width: 25%;
+}
+
+th#half-table-header {
+	width: 50%;
+}
+
+td {
+	height: 28px;
+	width: 25%;
+	padding: 0px 12px 0px 12px;
+}
+
+th {
+	background-color: #e2e2e2;
+	font-weight: 400;
+}
+
+.dark-row td {
+	background-color: #fafafa;
+}
+
+.half-div {
+	width: 48%;
+	float: left;
+	padding: 0 1% 0 1%;
+}
+
+.div-container {
+	width: 100%;
+}
+
+.first-div {
+	padding: 0 1% 0 0;
+}
+
+.last-div {
+	padding: 0 0 0 1%;
+}
+
+
+form {
+	margin: 0;
+}
+
+input[type="text"] {
+	height: 34px;
+	border: #cfcfcf 1px solid;
+	padding-left: 14px;
+	padding-right: 34px;
+	font-size: 16px;
+}
+
+input:required:valid {
+	background-image: url('../images/register/valid-form.png');
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	transition: none;
+}
+
+::-webkit-input-placeholder { 
+	font-weight: 100;
+	color: #999;
+}
+
+::-moz-placeholder { 
+	font-weight: 100; 	
+	color: #999; 
+} /* firefox 19+ */
+
+:-ms-input-placeholder { 
+	font-weight: 100; 
+	color: #999;
+} /* ie */
+
+input:-moz-placeholder { 
+	font-weight: 100;
+	color: #999;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: non;
+	width: 13px;
+	height: 13px;
+	margin: 0;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 1px solid #cfcfcf;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+	content: url('https://ssl.gstatic.com/ui/v1/menu/checkmark.png');
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
+
+input[type="radio"] {
+	border-radius: 100%;
+	background: #fff;
+	width: 15px;
+	height: 15px;
+	color: #999;
+}
+
+input[type="radio"]:checked::before {
+	background-color: #999;
+	bottom: 3px;
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	top: 3px;
+	content: '';
+	border-radius: 100%;
+}
+
+label {
+	padding: 0 20px 0 6px;
+}
+
+#footer {
+	width: 100%;
+	padding: 6px 0;
+	background-color: #000;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+}

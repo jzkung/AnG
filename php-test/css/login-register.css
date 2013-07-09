@@ -101,21 +101,21 @@
 
 input[type="text"], input[type="password"], input[type="email"], input[type="url"] {
 	display: block;
-	width: 100%;
+	width: 87.6%;
 }
 
 input[name="contact-person"] {
-	width: 32.577%;
+	width: 88px;
 	display: inline-block;
 }
 
 input[name="contact-number"] {
-	width: 66.29%;
+	width: 237px;
 	display: inline-block;
 }
 
 input[name="email"] {
-	width: 66.29%;
+	width: 237px;
 	float: left;
 }
 
@@ -164,7 +164,7 @@ button.small {
 	font-size: 16px;
 	float: left;
 	margin: 0 0 0 5px;
-	width: 32.577%;
+	width: 143px;
 	line-height: small;
 }
 
@@ -172,8 +172,9 @@ button:disabled {
 	background-color: #c7c7c7;
 }
 
-.ui-autocomplete-input {
-	width: 32.577%;
+input.ui-autocomplete-input  {
+	width: 88px;
+	display: inline;
 }
 
 .ui-autocomplete {
