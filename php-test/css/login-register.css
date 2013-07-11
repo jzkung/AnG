@@ -4,7 +4,6 @@
 
 #content-wrapper {
 	width: 1000px;
-	height: 1124px;
 	position: relative;
 	left: 50%;
 	margin-left: -500px;
@@ -38,6 +37,7 @@
 
 .group img {
 	width: 90%;
+	border: #cfcfcf 1px solid;
 }
 
 .left-image-wrapper {
@@ -50,12 +50,8 @@
 	float: right;
 }
 
-#group-1, #group-2 {
+#group-1, #group-2, #group-3, #group-4 {
 	height: 200px;
-}
-
-#group-3, #group-4 {
-	height: 300px;
 }
 
 #terms, #login-button-container {
@@ -88,7 +84,7 @@
 
 .input-group {
 	margin-top: 14px;
-	height: 34px;
+	height: 40px;
 }
 
 .input-group.last {
@@ -112,11 +108,6 @@ input[name="contact-person"] {
 input[name="contact-number"] {
 	width: 237px;
 	display: inline-block;
-}
-
-input[name="email"] {
-	width: 237px;
-	float: left;
 }
 
 select {
@@ -157,47 +148,4 @@ button.big {
 	height: 48px;
 	width: 100%;
 	font-size: 24px;
-}
-
-button.small {
-	padding: 8px;
-	font-size: 16px;
-	float: left;
-	margin: 0 0 0 5px;
-	width: 143px;
-	line-height: small;
-}
-
-button:disabled {
-	background-color: #c7c7c7;
-}
-
-input.ui-autocomplete-input  {
-	width: 88px;
-	display: inline;
-}
-
-.ui-autocomplete {
-  padding: 0;
-  list-style: none;
-  background-color: #fff;
-  width: 6%;
-  border: 1px solid #B0BECA;
-  max-height: 350px;
-  overflow-y: scroll;
-}
-
-.ui-autocomplete .ui-menu-item a {
-  border-top: 1px solid #B0BECA;
-  display: block;
-  padding: 4px 6px;
-  color: #353D44;
-  cursor: pointer;
-}
-.ui-autocomplete .ui-menu-item:first-child a {
-  border-top: none;
-}
-.ui-autocomplete .ui-menu-item a.ui-state-hover {
-  background-color: #D5E5F4;
-  color: #161A1C;
 }

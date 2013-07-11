@@ -2,6 +2,7 @@
 	<h2>登录到你的AG帐户</h2>
 	<div id="sign-in-register">还没有一个AG帐户？请马上<a href="register.php">注册</a></div>
 </div>
+
 <div id="left-content-wrapper">
 	<div id="group-1" class="group">
 		<div class="left-image-wrapper">
@@ -35,6 +36,7 @@
 			<h3>AG淘宝营销服务</h3>
 		</div>
 	</div>
+	<div style="clear:both"></div>
 </div>
 <div id="right-content-wrapper">
 	<div id="forms-wrapper">
@@ -49,3 +51,4 @@
 		</form>
 	</div>
 </div>
+<div style="clear:both"></div>
