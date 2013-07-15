@@ -7,7 +7,7 @@
 	</div>
 </div>
 <div id="content">
-<div id="features">
+<div id="features" class="clearfix">
 	<a href="#" class="feature">
 		<img src="images/features-1.png" class="center">
 		<div class="feature-text">
@@ -45,16 +45,14 @@
 		</div>
 	</a>
 </div>
-<div style="clear:both"></div>
-<div id="experience">
+<div id="experience" class="clearfix">
 	<img src="images/experience.png"/>
 	<div id="experience-text-container">
 		<div id="experience-text-header">我们的产品</div>
 		<div id="experience-text-description">中国千余家广告主的信赖</div>
 	</div>
 </div>
-<div style="clear:both"></div>
-<div id="register">
+<div id="register" class="clearfix">
 	<div id="register-text-container">
 		<div id="register-text-header">还没有AG帐户？</div>
 		<div id="register-text-description">

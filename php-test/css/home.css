@@ -1,9 +1,15 @@
 #secondary-nav-bar-wrapper, #secondary-products {
 	display: block;
 }
-
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1
+}
 #ad {
-	height: 438px;
 	background-image: url('http://i.imgur.com/qg4tP5v.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -15,7 +21,7 @@
 }
 
 #ad-text-container {
-	padding: 100px 0 0 10%;
+	padding: 100px 0 100px 10%;
 	vertical-align: middle;
 }
 
@@ -36,7 +42,6 @@
 
 #features {
 	background-color: #f7f7f7;
-	height: 436px;
 	padding: 0 10%;
 }
 
@@ -84,15 +89,10 @@ img.center {
 
 #experience {
 	background-color: #FFA200;
-	height: 354px;
 	width: 100%;
-	float: left;
-	position: relative;
 }
 
 #experience > img {
-	position: absolute;
-	bottom: 0;
 	margin-left: 10%;
 	float: left;
 	width: 40%;
@@ -115,14 +115,13 @@ img.center {
 	background-color: #fff;
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	height: 432px;
 	width: 100%;
 }
 
 #register-text-container {
 	float: left;
 	color: #1a1a1a;
-	padding: 100px 0 0 10%;
+	padding: 100px 0 100px 10%;
 }
 
 #register-text-description {
