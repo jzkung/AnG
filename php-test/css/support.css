@@ -12,11 +12,10 @@
 }
 
 #products {
-	padding: 0 10%;
+	padding: 5% 10%;
 }
 
 .product {
-	padding-top: 5%;
 	padding-right: 1%;
 	width: 24%;
 	float: left;

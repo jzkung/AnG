@@ -1,0 +1,54 @@
+#secondary-about {
+	display: block;
+}
+
+#ad {
+	background-image: url('../images/about/ad-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-color: #f7f7f7;
+	height: 438px;
+}
+
+#about-container, #traits-container, #contact-container, #join-us-container {
+	padding: 30px 10%;
+}
+
+.header1, .top-description {
+	text-align: center;
+}
+
+.top-description {
+	padding: 30px 0;
+}
+
+#traits-container {
+	background-image: url('../images/about/traits-bg.jpg');
+	background-size: cover;
+	color: #fff;
+}
+
+.trait {
+	width: 24%;
+	display: inline-block;
+    opacity: 1;
+}
+
+.trait-text {
+    padding: 8% 6%;
+}
+
+.trait-text-header {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.trait-text-description {
+	line-height: 26px;
+	padding-top: 8%;
+}
+
+#join-us-container {
+	color: #fff;
+	background-color: #00adef;
+}

@@ -100,7 +100,7 @@ img {
 	bottom: -20px;
 }
 
-#secondary-home, #secondary-products {
+#secondary-about, #secondary-products {
 	display: none;
 }
 
@@ -271,6 +271,12 @@ input:-moz-placeholder {
 	font-family: "Microsoft YaHei", "微软雅黑", Candara, Tahoma, SimSun !important;
 	font-weight: 100;
 	color: #999;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;   
+	margin-right: auto;
 }
 
 #footer {

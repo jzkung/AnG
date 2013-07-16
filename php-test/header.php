@@ -9,22 +9,21 @@
 					<li><a id="main-navbar-products">产品和服务</a></li>
 					<li><a id="main-navbar-support" href="support.php">帮助中心</a></li>
 					<li><a href="#">成功案例</a></li>
-					<li class="last"><a href="#">关于我们</a></li>
+					<li class="last"><a id="main-navbar-about" href="about.php">关于我们</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="secondary-navbar-wrapper">
 			<div id="secondary-navbar">
-				<ul id="secondary-home">
-					<li class="first"><a href="#">首页</a></li>
-					<li><a href="#">首页</a></li>
-					<li class="last"><a href="#">首页</a></li>
-				</ul>
 				<ul id="secondary-products">
-					<li class="first"><a href="#" id="secondary-products-1">AG广告效果分析平台</a></li>
-					<li><a href="#" id="secondary-products-2">AG竞价助手</a></li>
-					<li><a href="#" id="secondary-products-3">AG广告系统旗舰版</a></li>
-					<li class="last"><a href="#" id="secondary-products-4">AG淘宝营销服务</a></li>
+					<li class="first"><a id="secondary-products-1" href="#">AG广告效果分析平台</a></li>
+					<li><a id="secondary-products-2" href="#">AG竞价助手</a></li>
+					<li><a id="secondary-products-3" href="#">AG广告系统旗舰版</a></li>
+					<li class="last"><a id="secondary-products-4" href="#">AG淘宝营销服务</a></li>
+				</ul>
+				<ul id="secondary-about">
+					<li class="first"><a id="secondary-about-us" href="#">联系我们</a></li>
+					<li class="last"><a id="secondary-jobs" href="#">招贤纳士</a></li>
 				</ul>
 			</div>
 		</div>
