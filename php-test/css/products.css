@@ -1,0 +1,98 @@
+#secondary-products {
+	display: block;
+}
+
+#ad-jjzs {
+	background-image: url('../images/products/jjzs-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center!important;
+	overflow: hidden!important;
+	width: 100%!important;
+	margin: 0;
+	padding: 0;
+}
+
+#ad-text-container {
+	padding: 100px 0 100px 10%;
+	vertical-align: middle;
+}
+
+#ad-text-container button, #jjzs-panel-1 button {
+	margin-top: 22px;
+	margin-left: 5px;
+}
+
+#jjzs-panel-1, #cpc-panel {
+	padding: 30px 10% 0 10%;
+}
+
+#jjzs-panel-1-text-container {
+	padding-top: 30px;
+}
+
+#jjzs-panel-1 > img {
+	padding-top: 40px;
+	width: 50%;
+	float: right;
+	max-width: 500px;
+	max-height: 321px;
+}
+
+.features {
+	padding: 30px 10%;
+	background-color: #00adef;
+}
+
+#jjzs-features .header3 {
+	color: #1b4e62;
+}
+
+#jjzs-features, #cpc-panel {
+	text-align: center;
+}
+
+#jjzs-features {
+	color: #fff;
+}
+
+.feature {
+	display: inline-block;
+	vertical-align: top;
+    opacity: 1;
+}
+
+.feature img {
+	width: 60%;
+}
+
+.jjzs-feature {
+	padding-top: 40px;
+	width: 32.7%;
+}
+
+.feature-text {
+    padding: 8% 6%;
+}
+
+.feature-text-header {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.feature-text-description {
+	line-height: 26px;
+	padding-top: 8%;
+}
+
+#cpc-panel {
+	background-color: #f0f0f0;
+}
+
+#cpc-panel .header3 {
+	padding-bottom: 30px;
+}
+
+#cpc-panel #cpc-panel-bg {
+	width: 100%;
+}

@@ -150,6 +150,7 @@ button {
 	vertical-align: middle;
 	text-align: center;
 	font-size: 26px;
+	padding: 14px 44px;
 	transition: all 0.4s ease-in-out;
 }
 
@@ -180,7 +181,7 @@ button:hover {
 }
 
 .header3 {
-	font-size: 24px;
+	font-size: 22px;
 }
 
 .header4 {
