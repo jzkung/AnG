@@ -52,3 +52,13 @@
 	</div>
 </div>
 <div style="clear:both"></div>
+<script>
+if ($.browser.msie) {
+	var version = $.browser.msie && parseInt($.browser.version, 10);
+	if (version <= 8) {
+		$('input').css('font-family', '"Microsoft YaHei", "微软雅黑", Candara, Tahoma, SimSun !important');
+		$('input').css('padding-top','8px');
+		$('input').css('height','30px');
+	}
+}
+</script>
