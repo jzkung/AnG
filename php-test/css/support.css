@@ -6,18 +6,12 @@
 	padding: 60px 0 0 10%;
 }
 
-#bottom-panel {
-	position: relative;
-	margin: 60px 0 0 10%;
-}
-
 #title-header {
-	font-size: 44px;
 	padding-bottom: 10px;
 }
 
 #products {
-	padding: 5% 10%;
+	padding: 30px 10%;
 }
 
 .product {
@@ -49,6 +43,11 @@
 	color: white;
 	font-size: 16px;
 	text-align: center;
+}
+
+#bottom-panel {
+	position: relative;
+	margin: 0 10%;
 }
 
 #left-container, #right-container, #center-container {
@@ -95,6 +94,32 @@
 
 .contact {
 	margin-top: 25px;
-	font-size: 16px;
-	padding: 8px 25px;
+}
+
+.downloads, .videos, .questions, .docs, .back {
+	padding: 50px 10%;
+}
+
+.downloads {
+	background-color: #f0f0f0;
+}
+
+.downloads-description {
+	padding-bottom: 30px;
+}
+
+.downloads button {
+	width: 48%;
+}
+
+.right-button {
+	float: right;
+}
+
+.back {
+	background-color: #ffa200;
+}
+
+.back {
+	color: #fff;
 }

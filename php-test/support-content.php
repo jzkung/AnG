@@ -1,6 +1,6 @@
 <div id="title">
 	<div id="title-text-container">
-		<div id="title-header" class="header-text">我们可以为您提供什么帮助？</div>
+		<div id="title-header" class="header2">我们可以为您提供什么帮助？</div>
 		<div id="title-description" class="description-text">请选择产品/服务</div>
 	</div>
 </div>
@@ -9,7 +9,7 @@
 		<img src="images/support/product-1.png" class="center">
 		<div class="product-name" id="product-name-1">AG广告效果分析平台</div>
 	</a>
-	<a href="#" class="product" id="product-2">
+	<a href="support-jjzs.php" class="product" id="product-2">
 		<img src="images/support/product-2.png" class="center">
 		<div class="product-name" id="product-name-2">AG竞价助手</div>
 	</a>
@@ -52,7 +52,7 @@
 		<div class="header3">更多帮助</div>
 		<div>
 			 如果没有能帮助到您的，请联系我们！<br>
-			<button class="contact">联系我们</button>
+			<a href="about.php"><button class="contact">联系我们</button></a>
 		</div>
 	</div>
 </div>

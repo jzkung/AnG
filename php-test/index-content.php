@@ -2,8 +2,8 @@
 	<div id="ad-text-container">
 		<div id="ad-text-header" class="header1">在线营销！</div>
 		<div id="ad-text-description" class="description-text">AG广告平台每日管理预算超过400万</div>
-		<button class="button blue-button" href="register.php">注册</button>
-		<button class="button gray-button" href="login.php">登录</button>
+		<a href="register.php"><button class="button blue-button">注册</button></a>
+		<a href="login.php"><button class="button gray-button" href="login.php">登录</button></a>
 	</div>
 </div>
 <div id="features" class="clearfix">
