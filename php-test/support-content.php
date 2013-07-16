@@ -24,7 +24,7 @@
 </div>
 
 <div id="bottom-panel" class="clearfix">
-	<div id="left-container">
+	<div id="left-container" class="clearfix">
 		<div class="header3">热门下载</div>
 		<div>
 			<div class="header4">AG竞价助手</div>
@@ -35,17 +35,20 @@
 			<a href="#">Windows64位版本下载</a>
 		</div>
 	</div>
-	<div id="center-container">
+	<div id="center-container" class="clearfix">
 		<div class="header3">最热门问题</div>
-		<div class="description-text">
-			<a href="#">是否可以实时监控SEM广告及竞争对手的排名情况？</a>
-			<a href="#">对关键词调价是否可以实时调整？</a>
+		<div>
+			<a href="#">是否可以实时监控SEM广告及竞争对手的排名情况？</a><br/>
+			<a href="#">对关键词调价是否可以实时调整？</a><br/>
 			<a href="#">概览和报表中的收益一直是0，我的收益事件是用户注册量，
 				这个收益是否可以等于指定的收益项？</a>
 		</div>
 	</div>
-	<div id="right-container">
+	<div id="right-container" class="clearfix">
 		<div class="header3">更多帮助</div>
-		<div class="description-text"></div>
+		<div>
+			还有其他问题，请联系我们！
+			<button>请联系我们</button>
+		</div>
 	</div>
 </div>
