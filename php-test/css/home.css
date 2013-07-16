@@ -2,6 +2,15 @@
 	display: block;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1
+}
+
 #ad {
 	background-image: url('http://i.imgur.com/qg4tP5v.jpg');
 	background-repeat: no-repeat;

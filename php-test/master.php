@@ -10,8 +10,12 @@
 <script src="js/jquery.placeholder.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $(<?php echo $main_navbar_active; ?>).addClass('navbar-active');
-        $(<?php echo $secondary_navbar_active; ?>).addClass('navbar-active');
+		if (<?php echo $main_navbar_active; ?> != "") {
+			$(<?php echo $main_navbar_active; ?>).addClass('navbar-active');
+		}
+		if (<?php echo $secondary_navbar_active; ?> != "") {
+			$(<?php echo $secondary_navbar_active; ?>).addClass('navbar-active');
+		}
         $('input, textarea').placeholder();
     });
 </script>
