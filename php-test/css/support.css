@@ -1,4 +1,8 @@
-#title-text-container {
+#secondary-navbar-wrapper {
+	display: none;
+}
+
+#title-text-container, #bottom-panel {
 	padding: 60px 0 0 10%;
 }
 
@@ -13,9 +17,85 @@
 
 .product {
 	padding-top: 5%;
-	width: 25%;
+	padding-right: 1%;
+	width: 24%;
 	float: left;
 	display: inline-block;
 	color: #1a1a1a;
 	opacity: 1;
+}
+
+.product-last {
+	padding-right: 0;
+}
+
+.product-image-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
+.product-image-container:before {
+	content: "";
+	display: block;
+	margin-top: 100%;
+}
+
+.product-image {
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-name {
+	font-size: 22px;
+	text-align: center;
+}
+
+#product-image-1 {
+	background-image: url('../images/support/product-1.png');
+}
+
+#product-image-2 {
+	background-image: url('../images/support/product-2.png');
+}
+
+#product-image-3 {
+	background-image: url('../images/support/product-3.png');
+}
+
+#product-image-4 {
+	background-image: url('../images/support/product-4.png');
+}
+
+#product-1:hover #product-image-1 {
+	background-image: url('../images/support/product-1-hover.png');
+}
+
+#product-2:hover #product-image-2 {
+	background-image: url('../images/support/product-2-hover.png');
+}
+
+#product-3:hover #product-image-3 {
+	background-image: url('../images/support/product-3-hover.png');
+}
+
+#product-4:hover #product-image-4 {
+	background-image: url('../images/support/product-4-hover.png');
+}
+
+#left-container, #right-container, #center-container {
+	display: inline-block;
+}
+
+#left-container, #right-container {
+	width: 22%;
+}
+
+#center-container {
+	width: 48%;
 }
