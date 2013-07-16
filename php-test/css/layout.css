@@ -17,6 +17,15 @@ body, html {
     font-weight: 400;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1
+}
+
 #header{
 	position: fixed;
 	top: 0;
