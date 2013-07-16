@@ -7,6 +7,7 @@
 				<ul>
 					<li class="first"><a id="main-navbar-home" href="#">首页</a></li>
 					<li><a id="main-navbar-products">产品和服务</a></li>
+					<li><a id="main-navbar-support">帮助中心</a></li>
 					<li><a href="#">成功案例</a></li>
 					<li class="last"><a href="#">关于我们</a></li>
 				</ul>
@@ -20,7 +21,7 @@
 					<li class="last"><a href="#">首页</a></li>
 				</ul>
 				<ul id="secondary-products">
-					<li class="first"><a href="#" id="secondary-products-1">AG广告管理平台</a></li>
+					<li class="first"><a href="#" id="secondary-products-1">AG广告效果分析平台</a></li>
 					<li><a href="#" id="secondary-products-2">AG竞价助手</a></li>
 					<li><a href="#" id="secondary-products-3">AG广告系统旗舰版</a></li>
 					<li class="last"><a href="#" id="secondary-products-4">AG淘宝营销服务</a></li>

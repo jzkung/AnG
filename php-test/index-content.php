@@ -1,12 +1,11 @@
 <div id="ad">
 	<div id="ad-text-container">
-		<div id="ad-text-header">在线营销！</div>
-		<div id="ad-text-description">AG广告平台每日管理预算超过400万</div>
+		<div id="ad-text-header" class="header1">在线营销！</div>
+		<div id="ad-text-description" class="description-text">AG广告平台每日管理预算超过400万</div>
 		<button class="button blue-button" href="register.php">注册</button>
 		<button class="button gray-button" href="login.php">登录</button>
 	</div>
 </div>
-<div id="content">
 <div id="features" class="clearfix">
 	<a href="#" class="feature">
 		<img src="images/features-1.png" class="center">
@@ -48,14 +47,14 @@
 <div id="experience" class="clearfix">
 	<img src="images/experience.png"/>
 	<div id="experience-text-container">
-		<div id="experience-text-header">我们的产品</div>
-		<div id="experience-text-description">中国千余家广告主的信赖</div>
+		<div id="experience-text-header" class="header1">我们的产品</div>
+		<div id="experience-text-description" class="description-text">中国千余家广告主的信赖</div>
 	</div>
 </div>
 <div id="register" class="clearfix">
 	<div id="register-text-container">
-		<div id="register-text-header">还没有AG帐户？</div>
-		<div id="register-text-description">
+		<div id="register-text-header" class="header1">还没有AG帐户？</div>
+		<div id="register-text-description" class="description-text">
 			<form>
 				<p>
 					<input type="text" class="register-textField" name="username" placeholder="公司名称"><br><br>

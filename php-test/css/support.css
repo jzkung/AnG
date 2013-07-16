@@ -1,0 +1,21 @@
+#title-text-container {
+	padding: 60px 0 0 10%;
+}
+
+#title-header {
+	font-size: 44px;
+	padding-bottom: 10px;
+}
+
+#products {
+	padding: 0 10%;
+}
+
+.product {
+	padding-top: 5%;
+	width: 25%;
+	float: left;
+	display: inline-block;
+	color: #1a1a1a;
+	opacity: 1;
+}

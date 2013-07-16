@@ -25,15 +25,6 @@
 	vertical-align: middle;
 }
 
-#ad-text-header, #experience-text-header, #register-text-header {
-	font-size: 66px;
-}
-
-#ad-text-description, #experience-text-description, #register-text-description {
-	font-size: 16px;
-	margin-left: 5px;
-}
-
 #ad-text-container button {
 	margin-top: 22px;
 	margin-left: 5px;
@@ -93,6 +84,7 @@ img.center {
 }
 
 #experience > img {
+	padding-top: 40px;
 	margin-left: 10%;
 	float: left;
 	width: 40%;
