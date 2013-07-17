@@ -1,12 +1,12 @@
 var map;
 var beijingOffice = new google.maps.LatLng(39.948456, 116.450368);
 var shanghaiOffice = new google.maps.LatLng(31.227188, 121.460935);
-var beijingZoom = new google.maps.LatLng(beijingOffice.lat() - 0.001, beijingOffice.lng() - 0.005);
-var shanghaiZoom = new google.maps.LatLng(shanghaiOffice.lat() - 0.001, shanghaiOffice.lng() - 0.005);
+var beijingZoom = new google.maps.LatLng(beijingOffice.lat() - 0.002, beijingOffice.lng() - 0.005);
+var shanghaiZoom = new google.maps.LatLng(shanghaiOffice.lat() - 0.002, shanghaiOffice.lng() - 0.005);
 var beijingMarker;
 var shanghaiMarker;
-var beijingib;
-var shanghaiib;
+var beijingIB;
+var shanghaiIB;
 function initMap() {
 	var myOptions = {
 		zoom: 16,
@@ -40,31 +40,42 @@ function initMap() {
 	
 	var beijingBoxText = 
 	"<div id='map-box'>" + 
-	"北京无双科技有——公司<br>" +
-	"next line" +
+	"<div id='box-name-header'>北京无双科技有限公司</div>" +
+	"<div id='box-content'>北京市朝阳区新源里16号琨莎中心2号楼901室</div>" +
+	"<div id='box-contact'>" + 
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>邮箱</div><div class='box-info-right'>contactus@agrant.cn</div></div>" +
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>电话</div><div class='box-info-right'>+86-10-84682706</div></div>" +
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>传真 </div><div class='box-info-right'>+86-10-84682706</div></div>" +
 	"</div>"
-	beijingib = getib(beijingBoxText);
+	"</div>"
+	beijingIB = getIB(beijingBoxText);
 	
 	var shanghaiBoxText = 
 	"<div id='map-box'>" + 
-	"北京无双科技有——公司<br>" +
-	"next line" +
+	"<div id='box-name-header'>北京无双科技有限公司</div>" +
+	"<div id='box-content'>上海市威海路567号晶采世纪大厦8楼J座</div>" +
+	"<div id='box-contact'>" + 
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>邮箱</div><div class='box-info-right'>contactus@agrant.cn</div></div>" +
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>电话</div><div class='box-info-right'>+86-10-84682706</div></div>" +
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>传真 </div><div class='box-info-right'>+86-10-84682706</div></div>" +
+	"<div class='box-contact-line clearfix'><div class='box-info-left'>邮编 </div><div class='box-info-right'>200040</div></div>" +
 	"</div>"
-	shanghaiib = getib(shanghaiBoxText);
+	"</div>"
+	shanghaiIB = getIB(shanghaiBoxText);
 	
-	beijingib.open(map, beijingMarker);
+	beijingIB.open(map, beijingMarker);
 }
 
-function getib(boxText) {
+function getIB(boxText) {
 	var options = {
 		content: boxText,
 		disableAutoPan: true,
 		maxWidth: 0,
-		pixelOffset: new google.maps.Size(-172, 0),
+		pixelOffset: new google.maps.Size(-176, 0),
 		zIndex: null,
 		boxStyle: { 
 			background: "url('images/box-arrow.png') no-repeat",
-			width: "344px"
+			width: "355px"
 		},
 		closeBoxURL: "",
 		infoBoxClearance: new google.maps.Size(1, 1),
@@ -82,14 +93,14 @@ $(document).ready(function() {
 		map.panTo(beijingZoom);
 		$('#beijing-button').css('background-color','#FFA83F');
 		$('#shanghai-button').css('background-color','#B1B1B1');
-		beijingib.open(map, beijingMarker);
-		shanghaiib.close(map, shanghaiMarker);
+		beijingIB.open(map, beijingMarker);
+		shanghaiIB.close(map, shanghaiMarker);
 	});
 	$('#shanghai-button').click(function() {
 		map.panTo(shanghaiZoom);
 		$('#beijing-button').css('background-color','#B1B1B1');
 		$('#shanghai-button').css('background-color','#FFA83F');
-		shanghaiib.open(map, shanghaiMarker);
-		beijingib.close(map, beijingMarker);
+		shanghaiIB.open(map, shanghaiMarker);
+		beijingIB.close(map, beijingMarker);
 	});
 });
