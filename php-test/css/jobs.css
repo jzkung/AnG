@@ -1,0 +1,93 @@
+#secondary-about {
+	display: block;
+}
+
+#content-wrapper {
+	padding: 50px 10%;
+}
+
+#left-content-wrapper {
+	width: 47%;
+	float:left;
+}
+
+#left-title {
+	padding-bottom: 50px;
+}
+
+.left-list-wrapper {
+	padding-bottom: 30px;
+}
+
+.list-title {
+	padding-bottom: 7px;
+}
+
+.left-list {
+	padding-left: 50px;
+}
+
+.left-list li {
+	padding-bottom:5px;
+}
+
+#right-content-wrapper {
+	width: 35%;
+	float: right;
+}
+
+.right-title {
+	padding-bottom: 25px;
+}
+
+.form-description {
+	padding-bottom: 5px;
+}
+
+.form-part {
+	padding-bottom: 10px;
+}
+
+#dummy {
+	float: left;
+	width: 70%;
+}
+
+#file {
+	float: left;
+	width: 70%;
+	display: none;
+}
+
+#upload-button-container {
+	padding-left: 5px;
+	overflow: hidden;
+}
+
+#upload-button {
+	height: 37px;
+	width: 100%;
+	padding: 0;
+	vertical-align: top;
+	background-color: #C7C7C7;
+}
+
+#upload-button:hover {
+	background-color: #8F8F8F;
+}
+
+#submit-button-container {
+	padding-top: 30px;
+}
+
+#submit-button {
+	height: 45px;
+	width: 50%;
+	padding: 0;
+}
+
+input[type="text"] {
+	width: 94%;
+	padding: 5px 3%;
+	height: 25px;
+}
