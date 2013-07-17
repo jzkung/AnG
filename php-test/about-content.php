@@ -63,7 +63,7 @@
 	<span class="header2">跟着我们一起实现梦想吧！</span>
 	<button id="join-us-button" class="gray-button">加入我们</button>
 </div>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=cn"></script>
 <script src="js/infobox.js"></script>
 <script src="js/about.js"></script>
 
