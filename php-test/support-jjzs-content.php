@@ -1,19 +1,21 @@
 <script type="text/javascript">
     videojs("video-player", {}, function() {});
 
-    function SelectVideo(path)
+    function selectVideo(path, link)
     {
         var mplayer = videojs("video-player", {} );
         mplayer.src({ type:"video/mp4", src: path});
         mplayer.load();
         mplayer.play();
+        $('.active-video').removeClass('active-video');
+        $(link).addClass('active-video');
     }
 </script>
 
 <div class="downloads">
 	<div class="downloads-text-container">
-		<div class="header2">AG竞价助手</div>
-		<div class="header2">请选择适合您的版本</div>
+		<div class="header2" id="title-text"><img src="images/support/jjzs-icon-blue.png"/>AG竞价助手</div>
+		<div class="header3">请选择适合您的版本</div>
 		<a href="#"><button class="gray-button">Windows32位版本下载</button></a>
 		<a href="#"><button class="blue-button right-button">Windows64位版本下载</button></a>
 	</div>
@@ -28,11 +30,23 @@
 	    <source src="files/videos/jjzs-1.mp4" type='video/mp4' />
 	  </video>
 	  <div class="playlist">
-	  	<a onclick="SelectVideo('files/videos/jjzs-1.mp4');" class="active-video">Link one</a><br/>
-	  	<a href="#">Link one</a><br/>
-	  	<a href="#">Link one</a><br/>
-	  	<a href="#">Link one</a><br/>
-	  	<a href="#">Link one</a><br/>
+	  	<ul>
+		  	<li id="video1" onclick="selectVideo('files/videos/jjzs-1.mp4', '#video1');" class="active-video">
+		  		<span>Link one</span>
+		  	</li>
+		  	<li id="video2" onclick="selectVideo('files/videos/jjzs-1.mp4', '#video2');">
+		  		<span>Link one</span>
+		  	</li>
+		  	<li id="video3" onclick="selectVideo('files/videos/jjzs-1.mp4', '#video3');">
+		  		<span>Link one</span>
+		  	</li>
+		  	<li id="video4" onclick="selectVideo('files/videos/jjzs-1.mp4', '#video4');">
+		  		<span>Link one</span>
+		  	</li>
+		  	<li id="video5" onclick="selectVideo('files/videos/jjzs-1.mp4', '#video5');">
+		  		<span>Link one</span>
+		  	</li>
+	  	<ul>
 	  </div>
 	</div>
 </div>

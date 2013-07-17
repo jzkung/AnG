@@ -485,8 +485,8 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   display: block;
   z-index: 2;
   position: absolute;
-  left: 50%;
-  margin-left: -329px;
+  top: 130px;
+  left: 280px;
   width: 100px;
   height: 100px;
   margin: 0;
@@ -496,48 +496,39 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   opacity: 1;
 
   /* Need a slightly gray bg so it can be seen on black backgrounds */
-  background-color: #000;
-  opacity: 0.65;
+  background-color: rgba(0, 0, 0, 0.65);
   filter: alpha(opacity=65);
 
   border: 2px solid #fff;
-  border-color: rgba(255, 255, 255, 0.25);
 
-  -webkit-border-radius: 25px;
-     -moz-border-radius: 25px;
-          border-radius: 25px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
 
-  -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, -webkit-transform 0.4s;
-     -moz-transition: border 0.4s,    -moz-box-shadow 0.4s,    -moz-transform 0.4s;
-       -o-transition: border 0.4s,      -o-box-shadow 0.4s,      -o-transform 0.4s;
-          transition: border 0.4s,         box-shadow 0.4s,         transform 0.4s;
+  -webkit-transition: 0.4s;
+     -moz-transition: 0.4s;
+       -o-transition: 0.4s;
+          transition: 0.4s;
 }
 
 .vjs-default-skin:hover .vjs-big-play-button,
 .vjs-default-skin .vjs-big-play-button:focus {
-  outline: 0;
-  border-color: rgb(255, 255, 255);
-  border-color: rgba(255, 255, 255, 1);
-  /* IE8 needs a non-glow hover state */
-  background-color: rgb(80, 80, 80);
-  background-color: rgba(50, 50, 50, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: alpha(opacity=90);
 
-  -webkit-box-shadow: 0 0 3em #fff;
-     -moz-box-shadow: 0 0 3em #fff;
-          box-shadow: 0 0 3em #fff;
-
-  -webkit-transition: border 0s, -webkit-box-shadow 0s, -webkit-transform 0s;
-     -moz-transition: border 0s,    -moz-box-shadow 0s,    -moz-transform 0s;
-       -o-transition: border 0s,      -o-box-shadow 0s,      -o-transform 0s;
-          transition: border 0s,         box-shadow 0s,         transform 0s;
+  -webkit-transition: 0.4s;
+     -moz-transition: 0.4s;
+       -o-transition: 0.4s;
+          transition: 0.4s;
 }
 
 .vjs-default-skin .vjs-big-play-button:before {
   content: "\e001"; /* Play icon */
+  color: #fff;
   font-family: VideoJS;
-  font-size: 3em;
-  line-height: 2.66;
-  text-shadow: 0.05em 0.05em 0.1em #000;
+  font-size: 60px;
+  line-height: 100px;
+  margin-left: 8px;
   text-align: center; /* Needed for IE8 */
 
   position: absolute;
