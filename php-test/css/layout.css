@@ -172,6 +172,14 @@ button:hover {
 	background-color: #999;
 }
 
+.orange-button {
+	background-color: #ffa200;
+}
+
+.orange-button:hover {
+	background-color: #d88900;
+}
+
 .header1 {
 	font-size: 66px;
 }

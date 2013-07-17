@@ -19,11 +19,11 @@
 					<li class="first"><a id="secondary-products-1" href="#">AG广告效果分析平台</a></li>
 					<li><a id="secondary-products-2" href="#">AG竞价助手</a></li>
 					<li><a id="secondary-products-3" href="#">AG广告系统旗舰版</a></li>
-					<li class="last"><a id="secondary-products-4" href="#">AG淘宝营销服务</a></li>
+					<li class="last"><a id="secondary-products-4" href="taobao.php">AG淘宝营销服务</a></li>
 				</ul>
 				<ul id="secondary-about">
-					<li class="first"><a id="secondary-about-us" href="#">联系我们</a></li>
-					<li class="last"><a id="secondary-jobs" href="#">招贤纳士</a></li>
+					<li class="first"><a id="secondary-about-us" href="about.php">联系我们</a></li>
+					<li class="last"><a id="secondary-jobs" href="jobs.php">招贤纳士</a></li>
 				</ul>
 			</div>
 		</div>

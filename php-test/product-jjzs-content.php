@@ -21,7 +21,7 @@
 		<div class="description-text">轻松完成多账户、跨帐户海量操作</div>
 	</div>
 	<div class="feature jjzs-feature">
-		<img src="images/features-1.png" class="center">
+		<img src="images/products/jjzs-feature-1.png" class="center">
 		<div class="feature-text">
 			<div class="feature-text-header header3">AG广告管理平台</div>
 			<div class="feature-text-description">
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<div class="feature jjzs-feature">
-		<img src="images/features-2.png" class="center">
+		<img src="images/products/jjzs-feature-2.png" class="center">
 		<div class="feature-text">
 			<div class="feature-text-header header3">AG竞价助手</div>
 			<div class="feature-text-description">
@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="feature jjzs-feature">
-		<img src="images/features-3.png" class="center">
+		<img src="images/products/jjzs-feature-3.png" class="center">
 		<div class="feature-text">
 			<div class="feature-text-header header3">AG广告系统旗舰版</div>
 			<div class="feature-text-description">
