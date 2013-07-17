@@ -1,5 +1,5 @@
-#secondary-nav-bar-wrapper, #secondary-products {
-	display: block;
+#secondary-navbar-wrapper {
+	display: none;
 }
 
 #ad {

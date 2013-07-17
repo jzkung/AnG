@@ -136,7 +136,7 @@
 }
 
 .playlist li {
-	background-image: url('../images/dot.png');
+	background-image: url('../images/support/dot.png');
 	background-repeat: no-repeat;
 	background-position: 0px;
 	padding-left: 15px;
@@ -155,6 +155,37 @@
 
 .playlist span {
 	margin-left: -	20px;
+}
+
+.questions ul {
+	list-style-type: none;
+}
+
+.questions li {
+	background-image: url('../images/support/arrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 11px;
+	padding-left: 20px;
+	line-height: 30px;
+}
+
+li.active-question {
+	background-image: url('../images/support/arrow-expanded.png');
+}
+
+h4 {
+	color: #00adef;
+	cursor: pointer;
+}
+
+/* tiny accordion */
+#acc .acc-section {
+	overflow: hidden;
+}
+
+#acc .acc-content {
+	padding: 10px 0 20px 0;
+	line-height: 24px;
 }
 
 .back {
