@@ -1,7 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/flowplayer.playlist-3.2.10.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<script>videojs.options.flash.swf = "js/video-js.swf";</script>
+<link href="css/video-js.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="css/layout.css" />
 <link rel="stylesheet" type="text/css" href=<?php echo $page_css; ?> />
 <link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px), only screen and (max-device-width: 768px)" href=<?php echo $small_css; ?> />

@@ -116,10 +116,20 @@
 	float: right;
 }
 
-.back {
-	background-color: #ffa200;
+.player-wrapper {
+	background-color: #f0f0f0;
+}
+
+.playlist {
+	vertical-align: top;
+	display: inline-block;
+}
+
+#video-player {
+	display: inline-block;
 }
 
 .back {
+	background-color: #ffa200;
 	color: #fff;
 }
