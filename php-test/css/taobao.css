@@ -1,0 +1,27 @@
+#top-ad {
+	width: 100%;
+}
+
+#ad-text-container {
+	padding: 100px 100px 60px 100px;
+}
+
+#ad-header {
+	padding-bottom: 10px;
+	font-size: 59px;
+}
+
+#ad-description {
+	padding-bottom: 40px;
+}
+
+#ad-button {
+	background-color: #FFA200;
+	width: 190px;
+	height: 40px;
+	padding: 0px;
+}
+
+#taobao-links {
+	padding: 0px 15%;
+}
