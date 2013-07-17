@@ -3,51 +3,51 @@
 <div id="about-container" class="clearfix">
 	<div class="header1">我们是谁？</div>
 	<div class="top-description">
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
+		AnG北京无双科技有限公司于2009年在美国硅谷成立，创始人及
+		核心团队成员皆毕业于斯坦福、清华、上交大等知名学府，并具
+		有海外和国内知名互联网公司的管理和工作经验。AnG拥有由资
+		深互联网产品与营销服务人员组成的一流团队，在业内具有较高
+		的知名度。
 	</div>
 </div>
 <div id="traits-container" class="clearfix">
 	<div class="header1">我们做的事情</div>
 	<div class="top-description">
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
-		我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁我们是谁
+		为广告主提供最佳一站式在线营销解决方案
 	</div>
 	<div class="trait">
-		<img src="images/features-1.png" class="center">
+		<img src="images/about/trait-1.png" class="center">
 		<div class="trait-text">
-			<div class="trait-text-header">AG广告管理平台</div>
+			<div class="trait-text-header">先进的技术</div>
 			<div class="trait-text-description">
-				精确、智能分析广告投放效果，帮您找到提升收益之道。永久免费！
+				一流的人才，硅谷的标准.
 			</div>
 		</div>
 	</div>
 	<div class="trait">
-		<img src="images/features-2.png" class="center">
+		<img src="images/about/trait-2.png" class="center">
 		<div class="trait-text">
-			<div class="trait-text-header">AG广告管理平台</div>
+			<div class="trait-text-header">智慧的产品</div>
 			<div class="trait-text-description">
-				精确、智能分析广告投放效果，帮您找到提升收益之道。永久免费！
+				为不同用户群提供量身定制的产品.
 			</div>
 		</div>
 	</div>
 	<div class="trait">
-		<img src="images/features-3.png" class="center">
+		<img src="images/about/trait-3.png" class="center">
 		<div class="trait-text">
-			<div class="trait-text-header">AG广告管理平台</div>
+			<div class="trait-text-header">不断地优化</div>
 			<div class="trait-text-description">
-				精确、智能分析广告投放效果，帮您找到提升收益之道。永久免费！
+				每周更新，随需应变。
 			</div>
 		</div>
 	</div>
 	<div class="trait">
-		<img src="images/features-4.png" class="center">
+		<img src="images/about/trait-4.png" class="center">
 		<div class="trait-text">
-			<div class="trait-text-header">AG广告管理平台</div>
+			<div class="trait-text-header">给您最大的收益</div>
 			<div class="trait-text-description">
-				精确、智能分析广告投放效果，帮您找到提升收益之道。永久免费！
+				省时省力省心省钱
 			</div>
 		</div>
 	</div>

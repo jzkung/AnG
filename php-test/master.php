@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px), only screen and (max-device-width: 768px)" href=<?php echo $small_css; ?> />
 <script src="js/waypoints.min.js"></script>
 <script src="js/waypoints-sticky.min.js"></script>
+<script src="js/tinyaccordion.min.js"></script>
 <script src="js/jquery.placeholder.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {

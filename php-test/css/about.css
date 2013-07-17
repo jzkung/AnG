@@ -102,10 +102,16 @@ button {
 	width: 24%;
 	display: inline-block;
     opacity: 1;
+    vertical-align: top;
+}
+
+.trait img {
+	width: 70%;
 }
 
 .trait-text {
     padding: 8% 6%;
+    text-align: center;
 }
 
 .trait-text-header {
